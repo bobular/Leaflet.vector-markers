@@ -7,7 +7,7 @@
     L.VectorMarkers.Icon = L.Icon.extend({
       options: {
         iconSize: [30, 50],
-        iconAnchor: [15, 50],
+        iconAnchor: [15, 40],
         popupAnchor: [2, -40],
         shadowAnchor: [7, 45],
         shadowSize: [54, 51],
@@ -32,7 +32,7 @@
         pin_path = L.VectorMarkers.MAP_PIN;
         //ikirmitz: fix issue with iner icons not showing properly in firefox
         //div.innerHTML = '<svg width="32px" height="52px" viewBox="0 0 32 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">' + '<path d="' + pin_path + '" fill="' + options.markerColor + '"></path>' + icon + '</svg>';
-        div.innerHTML = '<svg width="32px" height="52px" viewBox="0 0 32 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">' + '<path d="' + pin_path + '" fill="' + options.markerColor + '"></path></svg>' + icon;
+        div.innerHTML = '<svg width="32px" height="40px" viewBox="0 0 32 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">' + '<path d="' + pin_path + '" fill="' + options.markerColor + '"></path></svg>' + icon;
         this._setIconStyles(div, "icon");
         this._setIconStyles(div, "icon-" + options.markerColor);
         return div;
